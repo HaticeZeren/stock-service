@@ -112,7 +112,11 @@ Docker deploy komutu aşağıdaki gibidir:
 
 ## Mysql Database Bilgileri:
 
-`    CREATE SCHEMA IF NOT EXISTS inventory;
+
+
+```
+
+CREATE SCHEMA IF NOT EXISTS inventory;
 
 -- Stok tablosunu oluşturma
 CREATE TABLE IF NOT EXISTS inventory.stock (
@@ -122,5 +126,7 @@ CREATE TABLE IF NOT EXISTS inventory.stock (
     quantity INT NOT NULL,
     price DOUBLE NOT NULL
 );
-`
+      
+```
+
 
