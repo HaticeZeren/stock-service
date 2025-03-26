@@ -110,4 +110,17 @@ Docker deploy komutu aşağıdaki gibidir:
 > docker-compose -p eureka-example  -f stock-service.yml up -d
 
 
+## Mysql Database Bilgileri:
+
+`    CREATE SCHEMA IF NOT EXISTS inventory;
+
+-- Stok tablosunu oluşturma
+CREATE TABLE IF NOT EXISTS inventory.stock (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(255) NOT NULL,
+    product_id BIGINT NOT NULL,
+    quantity INT NOT NULL,
+    price DOUBLE NOT NULL
+);
+`
 
